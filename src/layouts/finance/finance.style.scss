@@ -1,0 +1,45 @@
+@import '../utilities/grid';
+@import '../utilities/typography';
+
+
+.section-finance{
+    padding:20rem 0;
+    background-image:linear-gradient(to right bottom,rgba(126,213,111,0.8),rgba(40,180,131,0.8)),url(../../img/finance.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+
+    &>*{
+        transform: skewY(7deg);
+    }
+
+    @include respond(tab-port){
+        padding: 10rem 0;
+    }
+
+    margin-top:-11rem;
+}
+
+.feature-box{
+
+    background-color: rgba($color-white,.8);
+    font-size:1.8rem;
+    padding:2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+    transition: transform .3s;
+    font-family: "BPG Arial Caps", sans-serif;
+
+    &__icon{
+        width: 55%;
+        border-radius: 55%;
+        margin-bottom: .5rem;
+    }
+    
+    &:hover{
+        transform: translateY(-1.5rem) scale(1.03);
+        
+        font-weight: 900;
+    }
+
+}
